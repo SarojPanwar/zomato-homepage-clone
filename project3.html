@@ -32,9 +32,9 @@
                     <a href="#">Get the App</a>
                     <div class="navbar_menu_container">
                         <a href="#" class="link">Inventor Relations</a>
-                        <a href="#" class="link">Add Resturants</a>
-                        <a href="#" class="link">Login</a>
-                        <a href="#" class="link">Sign up</a>
+                        <a href="#" class="link">Add Restaurants</a>
+                        <a href="#" class="link" id="loginBtn">Login</a>
+                        <a href="#" class="link" id="signupBtn">Sign up</a>
                         <a href="#" class="user_icon">
                             <i class="fa-solid fa-user"></i>
                         </a>
@@ -47,7 +47,7 @@
                  <h1 class="hero__section_title">Discover the best food & drinks in Saharanpur</h1>
                  <div class="hero__section_input_container">
                     <input class="input_container_location" type="text" placeholder="Saharanpur"/>
-                    <input class="input_container_search" type="text" placeholder="search for Resturants,cuision,or a dish" />
+                    <input class="input_container_search" type="text" placeholder="search for Restaurants,cuisine,or a dish" />
                 </div>
             </div>
         </section>
@@ -225,5 +225,22 @@
             All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.
          </div>
            </footer>
+<!-- Modal for Login and Signup -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeBtn" class="close">&times;</span>
+        <h2 id="modalTitle">Login</h2>
+        <form id="loginForm">
+            <label for="phonenbr">Phone number:</label>
+            <input type="number" id="phonenbr" name="phonenbr" required />
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <button type="submit" class="btn">submit</button>
+        </form>
+    </div>
+</div>
+<script src="js.js"></script>
      </body>
 </html>
